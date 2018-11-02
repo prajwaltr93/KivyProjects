@@ -50,6 +50,7 @@ class AppLayout(BoxLayout):
 		if self.sensor_status:
 			try:
 				accelerometer.enable()
+				#increase the value of denominator to get more accurate /real time values
 				Clock.schedule_interval(self.get_acceleration,1.0/3)
 				self.sensor_status = False
 				self.ids.togglebutton.text = 'Stop'
