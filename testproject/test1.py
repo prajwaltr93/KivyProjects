@@ -6,6 +6,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
 from plyer import accelerometer
 import socket
+
 #import time
 # integrating client to app
 #testing latency
