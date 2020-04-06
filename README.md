@@ -1,7 +1,4 @@
 # projects
 all projects
 
-
-okay this is to test commit changes to master branch
-
-test 1
+This should host all my projects Both completed and work in progress projects

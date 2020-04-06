@@ -1,0 +1,30 @@
+AppLayout:
+<AppLayout>:
+	orientation:"vertical"
+	BoxLayout:
+		size_hint_y:1
+		orientation:"vertical"
+		Label:
+			size_hint_y:4
+			id:client_status
+			text:'Welcome'
+		TextInput:
+			id:hostname
+			text:'192.168.'
+		ToggleButton:
+			size_hint_y:1
+			id:server_button
+			text:'Create Socket'
+			on_press: root.connect_button()
+	BoxLayout:
+		size_hint_y:1
+		orientation:"vertical"
+		Label:
+			size_hint_y:4
+			id:value
+			text:'Acceleromter status'
+		ToggleButton:
+			size_hint_y:1
+			id:togglebutton
+			text:'Connect To client First'
+			on_press: root.do_toggle()
